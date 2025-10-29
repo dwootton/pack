@@ -1,0 +1,32 @@
+{"start": "00:02", "end": "00:03", "start_seconds": 2, "end_seconds": 3, "caption": "Scrolled down in the Terminal.", "chunk_index": 0}
+{"start": "00:06", "end": "00:06", "start_seconds": 6, "end_seconds": 6, "caption": "Clicked on the text \"nothing to commit, working tree clean\" in the terminal.", "chunk_index": 0}
+{"start": "00:09", "end": "00:12", "start_seconds": 9, "end_seconds": 12, "caption": "Clicked on the text \"pack/logs/session_20251025_165142\" in the terminal.", "chunk_index": 0}
+{"start": "00:16", "end": "00:17", "start_seconds": 16, "end_seconds": 17, "caption": "Switched from the Visual Studio Code window to the browser window.", "chunk_index": 0}
+{"start": "00:19", "end": "00:19", "start_seconds": 19, "end_seconds": 19, "caption": "Clicked on the text \"Missing visual information\" in the Claude window.", "chunk_index": 0}
+{"start": "00:21", "end": "00:22", "start_seconds": 21, "end_seconds": 22, "caption": "Scrolled up in the Claude window.", "chunk_index": 0}
+{"start": "00:23", "end": "00:23", "start_seconds": 23, "end_seconds": 23, "caption": "Clicked on the text \"Examined architectural differences between browser and OS-level UI serialization systems.\"", "chunk_index": 0}
+{"start": "00:25", "end": "00:25", "start_seconds": 25, "end_seconds": 25, "caption": "Switched to the \"Rrweb event and DOM management\" tab.", "chunk_index": 0}
+{"start": "00:26", "end": "00:26", "start_seconds": 26, "end_seconds": 26, "caption": "Clicked in the \"Ask anything\" input field.", "chunk_index": 0}
+{"start": "00:27", "end": "00:27", "start_seconds": 27, "end_seconds": 27, "caption": "Switched to the \"Claude\" tab.", "chunk_index": 0}
+{"start": "00:31", "end": "00:33", "start_seconds": 31, "end_seconds": 33, "caption": "Clicked repeatedly on the text \"Submission 8828\".", "chunk_index": 0}
+{"start": "00:36", "end": "00:36", "start_seconds": 36, "end_seconds": 36, "caption": "Switched to the \"Assignments\" tab.", "chunk_index": 0}
+{"start": "00:37", "end": "00:37", "start_seconds": 37, "end_seconds": 37, "caption": "Switched to the \"Untitled document\" tab.", "chunk_index": 0}
+{"start": "00:39", "end": "00:39", "start_seconds": 39, "end_seconds": 39, "caption": "Clicked the \"Untitled document\" tab.", "chunk_index": 0}
+{"start": "00:42", "end": "00:42", "start_seconds": 42, "end_seconds": 42, "caption": "Clicked the \"Help me write\" button.", "chunk_index": 0}
+{"start": "00:46", "end": "00:46", "start_seconds": 46, "end_seconds": 46, "caption": "Clicked the \"Create\" button in the \"Hello, Dylan\" dialog.", "chunk_index": 0}
+{"start": "00:52", "end": "00:52", "start_seconds": 52, "end_seconds": 52, "caption": "Scrolled up in the \"Hello, Dylan\" dialog.", "chunk_index": 0}
+{"start": "00:54", "end": "00:59", "start_seconds": 54, "end_seconds": 59, "caption": "Clicked the right arrow twice to scroll through templates in the \"Hello, Dylan\" dialog.", "chunk_index": 0}
+{"start": "01:02", "end": "01:02", "start_seconds": 62, "end_seconds": 62, "caption": "Clicked on the \"Party planning checklist for a surprise birthday party\" template.", "chunk_index": 1}
+{"start": "01:06", "end": "01:06", "start_seconds": 66, "end_seconds": 66, "caption": "Clicked the \"Create\" button.", "chunk_index": 1}
+{"start": "01:11", "end": "01:12", "start_seconds": 71, "end_seconds": 72, "caption": "Scrolled up in the \"Surprise Tropical Birthday Party Planning Checklist\" document.", "chunk_index": 1}
+{"start": "01:13", "end": "01:13", "start_seconds": 73, "end_seconds": 73, "caption": "Clicked on the \"Generating document...\" notification.", "chunk_index": 1}
+{"start": "01:17", "end": "01:18", "start_seconds": 77, "end_seconds": 78, "caption": "Scrolled down in the \"Surprise Tropical Birthday Party Planning Checklist\" document.", "chunk_index": 1}
+{"start": "01:18", "end": "01:18", "start_seconds": 78, "end_seconds": 78, "caption": "Clicked on the \"Generating document...\" notification.", "chunk_index": 1}
+{"start": "01:23", "end": "01:23", "start_seconds": 83, "end_seconds": 83, "caption": "Clicked on the \"Surprise Tropical Birthday Pa...\" tab in the sidebar.", "chunk_index": 1}
+{"start": "01:25", "end": "01:26", "start_seconds": 85, "end_seconds": 86, "caption": "Scrolled down in the \"Surprise Tropical Birthday Party Planning Checklist\" document.", "chunk_index": 1}
+{"start": "01:27", "end": "01:27", "start_seconds": 87, "end_seconds": 87, "caption": "Clicked on the \"Generating document...\" notification.", "chunk_index": 1}
+{"start": "01:31", "end": "01:31", "start_seconds": 91, "end_seconds": 91, "caption": "Clicked the \"Date\" field under the \"Deadline\" column for the \"Send thank-you notes to guests and helpers\" task.", "chunk_index": 1}
+{"start": "01:35", "end": "01:35", "start_seconds": 95, "end_seconds": 95, "caption": "Selected \"21\" from the calendar.", "chunk_index": 1}
+{"start": "01:36", "end": "01:36", "start_seconds": 96, "end_seconds": 96, "caption": "Switched to the Visual Studio Code window.", "chunk_index": 1}
+{"start": "01:38", "end": "01:38", "start_seconds": 98, "end_seconds": 98, "caption": "Clicked on the \"summary.png\" file in the file explorer.", "chunk_index": 1}
+{"start": "01:40", "end": "01:41", "start_seconds": 100, "end_seconds": 101, "caption": "Pressed Ctrl+C.", "chunk_index": 1}

@@ -1,0 +1,308 @@
+You are an expert video analyst reconstructing **precise low-level user actions** from annotated screen recordings and synchronized user input logs.
+
+Your job is to generate **fully detailed captions** describing **exactly what the user did** in each action segment. Use both visual information (screenshots with click and movement annotations) and the aggregated keystroke logs (pipe-delimited, with MM:SS timestamps) to reconstruct complete actions.
+
+## Input
+
+* A sequence of 1-second annotated screenshots with:
+  * **Click markers** (colored circles for different mouse buttons)
+  * **Cursor movement arrows** (showing direction and sequence of interactions)
+* A pipe-delimited log of user input events (MM:SS format)
+
+---
+
+Here are the user input events:
+
+
+00:00 Event:
+Cursor positions: (506, -497) to (498, -592)
+Actions:
+	Mouse moved from (506, -497) to (498, -592) (31 movements)
+        
+00:01 Event:
+
+Actions:
+No actions recorded.
+        
+00:02 Event:
+Cursor positions: (498, -592) to (498, -592)
+Actions:
+	Mouse moved to (498, -592)
+	Mouse moved to (498, -592)
+	Mouse clicked left at (498, -592)
+        
+00:03 Event:
+Cursor position: (498, -592)
+Actions:
+No actions recorded.
+        
+00:04 Event:
+Cursor positions: (498, -591) to (728, -310)
+Actions:
+	Mouse moved from (498, -591) to (728, -310) (35 movements)
+        
+00:05 Event:
+Cursor positions: (727, -309) to (722, -300)
+Actions:
+	Mouse moved from (727, -309) to (722, -300) (8 movements)
+        
+00:06 Event:
+Cursor positions: (721, -299) to (562, -387)
+Actions:
+	Mouse moved from (721, -299) to (721, -298) (5 movements)
+	Mouse clicked left at (721, -298)
+	Mouse moved to (721, -298)
+	Mouse moved from (721, -298) to (562, -387) (15 movements)
+        
+00:07 Event:
+Cursor positions: (556, -395) to (522, -472)
+Actions:
+	Mouse moved from (556, -395) to (522, -472) (7 movements)
+        
+00:08 Event:
+Cursor positions: (522, -471) to (399, -553)
+Actions:
+	Mouse moved from (522, -471) to (399, -553) (80 movements)
+        
+00:09 Event:
+Cursor positions: (401, -555) to (408, -564)
+Actions:
+	Mouse moved from (401, -555) to (408, -564) (11 movements)
+        
+00:10 Event:
+Cursor positions: (408, -564) to (408, -564)
+Actions:
+	Scrolled no scroll (82 times)
+        
+00:11 Event:
+Cursor positions: (408, -564) to (408, -564)
+Actions:
+	Scrolled up (5 times)
+        
+00:12 Event:
+Cursor positions: (408, -564) to (571, -668)
+Actions:
+	Scrolled up (3 times)
+	Mouse moved from (408, -564) to (571, -668) (32 movements)
+        
+00:13 Event:
+Cursor positions: (571, -668) to (571, -668)
+Actions:
+	Mouse moved to (571, -668)
+	Mouse clicked left at (571, -668)
+        
+00:14 Event:
+
+Actions:
+No actions recorded.
+        
+00:15 Event:
+Cursor positions: (571, -668) to (571, -668)
+Actions:
+	Mouse moved to (571, -668)
+        
+00:16 Event:
+Cursor positions: (571, -668) to (571, -668)
+Actions:
+	Scrolled no scroll (22 times)
+        
+00:17 Event:
+Cursor positions: (571, -668) to (571, -668)
+Actions:
+	Scrolled down (5 times)
+        
+00:18 Event:
+Cursor positions: (571, -668) to (571, -668)
+Actions:
+	Scrolled down (4 times)
+	Mouse clicked left at (571, -668)
+        
+00:19 Event:
+Cursor position: (571, -668)
+Actions:
+No actions recorded.
+        
+00:20 Event:
+Cursor positions: (571, -667) to (454, -473)
+Actions:
+	Mouse moved from (571, -667) to (454, -473) (16 movements)
+        
+00:21 Event:
+
+Actions:
+No actions recorded.
+        
+00:22 Event:
+Cursor positions: (449, -469) to (428, -453)
+Actions:
+	Mouse moved from (449, -469) to (428, -453) (8 movements)
+        
+00:23 Event:
+Cursor positions: (428, -453) to (427, -453)
+Actions:
+	Mouse moved from (428, -453) to (427, -453) (3 movements)
+	Mouse clicked left at (427, -453)
+        
+00:24 Event:
+Cursor positions: (427, -453) to (427, -453)
+Actions:
+	Scrolled no scroll (138 times)
+        
+00:25 Event:
+Cursor positions: (427, -453) to (427, -453)
+Actions:
+	Scrolled down (5 times)
+        
+00:26 Event:
+Cursor positions: (427, -453) to (514, -678)
+Actions:
+	Scrolled down (4 times)
+	Mouse moved from (427, -453) to (514, -678) (73 movements)
+        
+00:27 Event:
+Cursor positions: (511, -679) to (500, -687)
+Actions:
+	Mouse moved from (511, -679) to (500, -687) (13 movements)
+	Mouse clicked left at (500, -687)
+        
+00:28 Event:
+Cursor positions: (500, -687) to (547, -513)
+Actions:
+	Mouse moved to (500, -687)
+	Mouse moved from (500, -686) to (547, -513) (56 movements)
+        
+00:29 Event:
+Cursor positions: (546, -513) to (545, -513)
+Actions:
+	Mouse moved from (546, -513) to (545, -513) (8 movements)
+        
+00:30 Event:
+Cursor positions: (544, -513) to (544, -513)
+Actions:
+	Mouse moved to (544, -513)
+	Mouse moved to (544, -513)
+        
+00:31 Event:
+Cursor positions: (544, -513) to (544, -513)
+Actions:
+	Mouse clicked left at (544, -513)
+        
+00:32 Event:
+Cursor positions: (544, -511) to (619, -330)
+Actions:
+	Mouse moved from (544, -511) to (619, -330) (37 movements)
+        
+00:33 Event:
+
+Actions:
+No actions recorded.
+        
+00:34 Event:
+Cursor positions: (619, -329) to (621, -319)
+Actions:
+	Mouse moved from (619, -329) to (621, -319) (13 movements)
+        
+00:35 Event:
+Cursor positions: (621, -319) to (621, -319)
+Actions:
+	Mouse clicked left at (621, -319)
+        
+00:36 Event:
+Cursor positions: (621, -319) to (541, 858)
+Actions:
+	Mouse moved from (621, -319) to (541, 858) (73 movements)
+        
+00:37 Event:
+
+Actions:
+No actions recorded.
+        
+00:38 Event:
+Cursor positions: (545, 863) to (554, 875)
+Actions:
+	Mouse moved from (545, 863) to (554, 875) (14 movements)
+	Mouse clicked left at (554, 875)
+	Mouse moved to (554, 875)
+        
+00:39 Event:
+Cursor position: (554, 875)
+Actions:
+No actions recorded.
+        
+00:40 Event:
+Cursor position: (554, 875)
+Actions:
+	Key pressed: ctrl
+        
+00:41 Event:
+Cursor position: (554, 875)
+Actions:
+	Key pressed: c
+        
+
+---
+
+## Rules
+
+1. **Fully reconstruct text and commands**
+
+   - Always state the **entire typed or pasted string**.
+   - Never stop at intermediate steps (e.g. "pressed Up arrow") unless the result is known. Instead, **describe the final command shown or executed**.
+
+2. **Atomic actions only**
+
+   - Each caption must cover **exactly one** user interaction (e.g. window switch, application launch, menu click).
+   - Do **not** combine multiple distinct interactions (e.g. switching windows **and** clicking in one caption).
+
+3. **Disallow vague actions**
+
+   - Never use vague phrases like *"edits text"*, *"clicks folder"*, or *"opens a terminal"* without mentioning **what** was edited/clicked/opened **and what it contained**.
+
+4. **Name all objects interacted with**
+
+   - Identify folders, files, UI elements, spreadsheet cells (with values and labels), browser fields, etc.
+   - Include **visible labels or contents** of buttons, menu items, folders, etc.
+
+5. **Ignore technical rendering details**
+
+   - Do not mention coordinates, cursor paths, or raw keycodes.
+
+6. IMPORTANT: **Merge repeated identical actions**
+
+   - If the same action is done repeatedly with no change or intermediate action, **merge them into one action** with a wider start–end interval. For example, instead of multiple "Ran the command \"ls\" in the terminal," generate it ONLY once.
+   - If the user repeatedly clicks / switches between applications without performing any intermediate action, merge them into a single combined action. 
+   - If events repeat, you MUST combine multiple events (e.g. clicks or switches) together into a single event and widen the start-end interval appropriately:
+      - "[Switched / clicked] [from / on] X to Y to X."
+      - “[Switched / clicked] [from / on] X to Y to Z to X.”
+
+---
+
+## Examples
+
+Generated captions must be in past tense, and at the level of detail as the examples below:
+
+- Switched repeatedly from the terminal window to the desktop.
+- Switched from the terminal window to the desktop to Google Chrome.
+- Opened the System Settings application.
+- Clicked the "Network" tab in the Settings sidebar.
+- Typed "openai office munich" into the Google search bar and pressed Enter.
+- Clicked on the Google search result titled "OpenAI Deutschland"
+- Ran "cd /home/user/projects/gs-utils" in the terminal.
+- Deleted the text "hyundai i30" from cell I2.
+- Clicked the "Downloads" folder in the sidebar.
+
+You MUST quote specific things from the screen so it's easy to reproduce your steps.
+
+## Output
+
+A JSON array of objects:
+
+```json
+[
+  {
+    "start": "MM:SS",
+    "end":   "MM:SS",
+    "caption": "..."
+  }
+]
+```

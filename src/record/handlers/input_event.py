@@ -45,6 +45,18 @@ class InputEventHandler:
                 return idx, to_monitor_dict(monitor)
         return 0, to_monitor_dict(self._monitors[0])
 
+
+    def _finalize_event(self, event: InputEvent) -> None:
+        """Apply enrichment (accessibility, etc.) and enqueue."""
+        if self.accessibility_enabled and self.accessibility_handler:
+            ax_data = self.accessibility_handler(event)
+            if ax_data:
+                event.details.update(ax_data)
+
+        self.event_queue.enqueue(event)
+
+
+
     def on_move(self, x: int, y: int) -> None:
         """
         Callback for mouse move events.
@@ -65,12 +77,7 @@ class InputEventHandler:
             cursor_position=(x, y)
         )
         
-        if self.accessibility_enabled and self.accessibility_handler:
-            ax_data = self.accessibility_handler(event)
-            if ax_data:
-                event.details.update(ax_data)
-        
-        self.event_queue.enqueue(event)
+        self._finalize_event(event)
 
     def on_click(self, x: int, y: int, button: mouse.Button, pressed: bool) -> None:
         """
@@ -98,12 +105,7 @@ class InputEventHandler:
             cursor_position=(x, y)
         )
         
-        if self.accessibility_enabled and self.accessibility_handler:
-            ax_data = self.accessibility_handler(event)
-            if ax_data:
-                event.details.update(ax_data)
-        
-        self.event_queue.enqueue(event)
+        self._finalize_event(event)
 
     def on_scroll(self, x: int, y: int, dx: int, dy: int) -> None:
         """
@@ -132,12 +134,7 @@ class InputEventHandler:
             cursor_position=(x, y)
         )
         
-        if self.accessibility_enabled and self.accessibility_handler:
-            ax_data = self.accessibility_handler(event)
-            if ax_data:
-                event.details.update(ax_data)
-        
-        self.event_queue.enqueue(event)
+        self._finalize_event(event)
 
     def on_press(self, key) -> None:
         """
@@ -167,12 +164,7 @@ class InputEventHandler:
             cursor_position=(x, y)
         )
         
-        if self.accessibility_enabled and self.accessibility_handler:
-            ax_data = self.accessibility_handler(event)
-            if ax_data:
-                event.details.update(ax_data)
-        
-        self.event_queue.enqueue(event)
+        self._finalize_event(event)
 
     def on_release(self, key) -> None:
         """
@@ -202,9 +194,4 @@ class InputEventHandler:
             cursor_position=(x, y)
         )
         
-        if self.accessibility_enabled and self.accessibility_handler:
-            ax_data = self.accessibility_handler(event)
-            if ax_data:
-                event.details.update(ax_data)
-        
-        self.event_queue.enqueue(event)
+        self._finalize_event(event)
